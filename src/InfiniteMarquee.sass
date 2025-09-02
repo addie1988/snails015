@@ -1,0 +1,107 @@
+// 無限循環跑馬燈樣式
+
+.infinite-marquee
+    position: relative
+    width: 100%
+    overflow: hidden
+    border-radius: 12px
+    padding: 20px 0
+    
+    // 懸停提示
+    .marquee-hint
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: rgba(0, 0, 0, 0.8)
+        color: white
+        padding: 8px 16px
+        border-radius: 20px
+        font-size: 14px
+        font-weight: 500
+        opacity: 0
+        transition: opacity 0.3s ease
+        pointer-events: none
+        z-index: 10
+        
+        &.visible
+            opacity: 1
+
+    // 跑馬燈內容
+    .marquee-content
+        display: flex
+        align-items: center
+        gap: 40px
+        white-space: nowrap
+        will-change: transform
+        
+        // 確保內容不會換行
+        > *
+            flex-shrink: 0
+            display: flex
+            align-items: center
+            gap: 20px
+            padding: 8px 25px
+            transition: all 0.3s ease
+            border-left: 1px solid #000
+            
+            &:hover
+                transform: translateY(-2px)
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15)
+                background: rgba(255, 255, 255, 1)
+            
+            // SVG 圖標樣式
+            svg
+                width: 80px
+                height: 80px
+                flex-shrink: 0
+            
+            // 文字樣式
+            p
+                margin: 0
+                font-size: 14px
+                font-weight: 500
+                color: #333
+                white-space: nowrap
+                padding: 20px
+                border: 1px solid #000
+                border-radius: 8px
+
+// 響應式設計
+@media (max-width: 768px)
+    .infinite-marquee
+        padding: 15px 0
+        
+        .marquee-content
+            gap: 30px
+            
+            > *
+                padding: 12px 20px
+                
+                svg
+                    width: 80px
+                    height: 80px
+                
+                p
+                    font-size: 13px
+
+@media (max-width: 480px)
+    .infinite-marquee
+        .marquee-content
+            gap: 20px
+            
+            > *
+                padding: 10px 16px
+                
+                svg
+                    width: 18px
+                    height: 18px
+                
+                p
+                    font-size: 12px
+
+// 動畫優化
+.infinite-marquee
+    .marquee-content
+        backface-visibility: hidden
+        perspective: 1000px

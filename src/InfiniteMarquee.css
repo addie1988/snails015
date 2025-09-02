@@ -1,0 +1,109 @@
+.infinite-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 20px 0;
+}
+
+.infinite-marquee .marquee-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.infinite-marquee .marquee-hint.visible {
+  opacity: 1;
+}
+
+.infinite-marquee .marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.infinite-marquee .marquee-content > * {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+  border-left: 1px solid #000;
+}
+
+.infinite-marquee .marquee-content > *:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+.infinite-marquee .marquee-content > * svg {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.infinite-marquee .marquee-content > * p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .infinite-marquee {
+    padding: 15px 0;
+  }
+  .infinite-marquee .marquee-content {
+    gap: 30px;
+  }
+  .infinite-marquee .marquee-content > * {
+    padding: 12px 20px;
+  }
+  .infinite-marquee .marquee-content > * svg {
+    width: 80px;
+    height: 80px;
+  }
+  .infinite-marquee .marquee-content > * p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .infinite-marquee .marquee-content {
+    gap: 20px;
+  }
+  .infinite-marquee .marquee-content > * {
+    padding: 10px 16px;
+  }
+  .infinite-marquee .marquee-content > * svg {
+    width: 18px;
+    height: 18px;
+  }
+  .infinite-marquee .marquee-content > * p {
+    font-size: 12px;
+  }
+}
+
+.infinite-marquee .marquee-content {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
