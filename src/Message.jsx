@@ -1,4 +1,5 @@
 import React from "react";
+import Message_button_svg from "./Message_button_svg";
 
 export default function Message() {
   return (
@@ -125,7 +126,10 @@ export default function Message() {
 
             <div className="message_button">
               <div className="message_button_content">
-                <a href="">Join our Discord</a>
+                <a href="">
+                  <Message_button_svg />
+                  <p>Join our Discord</p>
+                </a>
               </div>
             </div>
           </div>

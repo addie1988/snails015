@@ -772,7 +772,7 @@ $boxshadow: 3px 3px 0px 0 rgba(0, 0, 0, 1)
 
                     li
                         width: 26%
-                        height: 380px
+                        height: 100%
                         margin: 6px
                         padding: 20px
                         border-radius: 16px
@@ -801,6 +801,27 @@ $boxshadow: 3px 3px 0px 0 rgba(0, 0, 0, 1)
                         span
                             color: #787878
                             font-size: 1.1rem
+                .message_button
+                    position: relative
+                    margin-top: 80px
+
+                    .message_button_content
+                        margin: 0 auto
+                        width: 20%
+
+                        a
+                            padding: 22px 32px
+                            background-color: #5969EA
+                            border: 1px solid #000
+                            border-radius: 20px
+                            box-shadow: 3px 3px 0px 0 rgb(255, 255, 255)
+                            color: #fff
+                            text-decoration: none
+                            display: flex
+                            align-items: center
+                            justify-content: space-evenly
+                            p
+                                margin-left: 10px
 
 @media screen and (max-width: 1200px)
     .message
@@ -815,3 +836,10 @@ $boxshadow: 3px 3px 0px 0 rgba(0, 0, 0, 1)
 
                             &:nth-child(6)
                                 transform: translateY(0px)
+
+                    .message_button
+                        .message_button_content
+                            width: 80%
+                            a
+                                justify-content: center
+

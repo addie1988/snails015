@@ -52,7 +52,8 @@ export default function Banner() {
 
         {/* 無限循環跑馬燈 */}
         <div className="banner_marquee">
-          <InfiniteMarquee speed={15} direction="left" pauseOnHover={true}>
+          <InfiniteMarquee speed={50} direction="left" pauseOnHover={true}>
+            {/* 原始項目 */}
             <div className="marquee-item">
               <Drag_and_play_svg_1 />
               <p>Personalized Avatar Generation</p>

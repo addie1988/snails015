@@ -19,20 +19,28 @@ export default function InfiniteMarquee({
         const animate = (currentTime) => {
             if (!lastTimeRef.current) lastTimeRef.current = currentTime
             
-            if (!isPaused) {
+            if (!isPaused && contentRef.current) {
                 const deltaTime = currentTime - lastTimeRef.current
                 const deltaPosition = (speed * deltaTime) / 1000
                 
+                // 計算內容寬度
+                const contentWidth = contentRef.current.scrollWidth / 3 // 因為有3份內容
+                
                 if (direction === 'left') {
                     positionRef.current -= deltaPosition
+                    // 當位移超過一個內容寬度時重置
+                    if (Math.abs(positionRef.current) >= contentWidth) {
+                        positionRef.current = 0
+                    }
                 } else {
                     positionRef.current += deltaPosition
+                    // 當位移超過一個內容寬度時重置
+                    if (positionRef.current >= contentWidth) {
+                        positionRef.current = 0
+                    }
                 }
                 
-                if (contentRef.current) {
-                    contentRef.current.style.transform = `translateX(${positionRef.current}px)`
-                }
-                
+                contentRef.current.style.transform = `translateX(${positionRef.current}px)`
                 lastTimeRef.current = currentTime
             }
             

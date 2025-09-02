@@ -823,7 +823,7 @@
 
 .message .message_content .message_content_area .message_content_area_content ul li {
   width: 26%;
-  height: 380px;
+  height: 100%;
   margin: 6px;
   padding: 20px;
   border-radius: 16px;
@@ -855,6 +855,33 @@
   font-size: 1.1rem;
 }
 
+.message .message_content .message_content_area .message_content_area_content .message_button {
+  position: relative;
+  margin-top: 80px;
+}
+
+.message .message_content .message_content_area .message_content_area_content .message_button .message_button_content {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.message .message_content .message_content_area .message_content_area_content .message_button .message_button_content a {
+  padding: 22px 32px;
+  background-color: #5969EA;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0 white;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.message .message_content .message_content_area .message_content_area_content .message_button .message_button_content a p {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 1200px) {
   .message .message_content .message_content_area .message_content_area_content ul li {
     width: 36%;
@@ -864,5 +891,11 @@
   }
   .message .message_content .message_content_area .message_content_area_content ul li:nth-child(6) {
     transform: translateY(0px);
+  }
+  .message .message_content .message_content_area .message_content_area_content .message_button .message_button_content {
+    width: 80%;
+  }
+  .message .message_content .message_content_area .message_content_area_content .message_button .message_button_content a {
+    justify-content: center;
   }
 }
