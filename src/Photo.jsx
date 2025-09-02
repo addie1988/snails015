@@ -120,66 +120,66 @@ export default function Photo() {
 
   const photoItems1 = [
     {
-      maxImg: "./public/photo_area_1.webp",
-      minImg: "./public/photo_min_img_7.webp", 
+      maxImg: "../public/photo_area_1.webp",
+      minImg: "../public/photo_min_img_7.webp", 
       name: "@Phil Walton"
     },
     {
-      maxImg: "./public/photo_area_2.webp",
-      minImg: "./public/photo_min_img_8.webp",
+      maxImg: "../public/photo_area_2.webp",
+      minImg: "../public/photo_min_img_8.webp",
       name: "@Linus ●ᴗ● Ekenstam"
     },
     {
-      maxImg: "./public/photo_area_3.webp",
-      minImg: "./public/photo_min_img_9.webp",
+      maxImg: "../public/photo_area_3.webp",
+      minImg: "../public/photo_min_img_9.webp",
       name: "@Jerrod Lew"
     },
     {
-      maxImg: "./public/photo_area_4.webp",
-      minImg: "./public/photo_min_img_10.webp",
+      maxImg: "../public/photo_area_4.webp",
+      minImg: "../public/photo_min_img_10.webp",
       name: "@Jenny"
     },
     {
-      maxImg: "./public/photo_area_9.webp",
-      minImg: "./public/photo_min_img_11.webp",
+      maxImg: "../public/photo_area_9.webp",
+      minImg: "../public/photo_min_img_11.webp",
       name: "@Jenny"
     },
     {
-      maxImg: "./public/photo_area_6.webp",
-      minImg: "./public/photo_min_img_12.webp",
+      maxImg: "../public/photo_area_6.webp",
+      minImg: "../public/photo_min_img_12.webp",
       name: "@Jenny"
     }
   ];
 
   const photoItems2 = [
     {
-      maxImg: "./public/photo_area_7.webp",
-      minImg: "./public/photo_min_img_1.webp",
+      maxImg: "../public/photo_area_7.webp",
+      minImg: "../public/photo_min_img_1.webp",
       name: "@Phil Walton"
     },
     {
-      maxImg: "./public/photo_area_8.webp",
-      minImg: "./public/photo_min_img_2.webp",
+      maxImg: "../public/photo_area_8.webp",
+      minImg: "../public/photo_min_img_2.webp",
       name: "@Linus ●ᴗ● Ekenstam"
     },
     {
-      maxImg: "./public/photo_area_9.webp",
-      minImg: "./public/photo_min_img_3.webp",
+      maxImg: "../public/photo_area_9.webp",
+      minImg: "../public/photo_min_img_3.webp",
       name: "@Jerrod Lew"
     },
     {
-      maxImg: "./public/photo_area_10.webp",
-      minImg: "./public/photo_min_img_4.webp",
+      maxImg: "../public/photo_area_10.webp",
+      minImg: "../public/photo_min_img_4.webp",
       name: "@Jenny"
     },
     {
-      maxImg: "./public/photo_area_11.webp",
-      minImg: "./public/photo_min_img_5.webp",
+      maxImg: "../public/photo_area_11.webp",
+      minImg: "../public/photo_min_img_5.webp",
       name: "@Jenny"
     },
     {
-      maxImg: "./public/photo_area_12.webp",
-      minImg: "./public/photo_min_img_6.webp",
+      maxImg: "../public/photo_area_12.webp",
+      minImg: "../public/photo_min_img_6.webp",
       name: "@Jenny"
     }
   ];
