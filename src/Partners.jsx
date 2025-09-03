@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 export default function Partners() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScrollPosition(prev => (prev + 1) % 100);
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
-
   const partners = [
     "https://cdn.prod.website-files.com/63c3059a658a4c786dbd48fd/6642338aaf20bc8045926ed9_Partners%20-%20Logo%20%5B01%5D.svg",
     "https://cdn.prod.website-files.com/63c3059a658a4c786dbd48fd/66423387e329ed7257372723_Partners%20-%20Logo%20%5B02%5D.svg", 
@@ -18,6 +9,17 @@ export default function Partners() {
     "https://cdn.prod.website-files.com/63c3059a658a4c786dbd48fd/66423386f98e808d82eeb114_Partners%20-%20Logo%20%5B05%5D.svg",
     "https://cdn.prod.website-files.com/63c3059a658a4c786dbd48fd/6648b3d028010eea54957f92_Partners%20-%20Logo%20%5B07%5D.svg"
   ];
+
+  const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPosition(prev => prev - 1);
+    }, 20);
+    return () => clearInterval(interval);
+  }, []);
+
+  const duplicatedPartners = Array(100).fill(partners).flat();
 
   return (
     <div className="partners">
@@ -30,27 +32,35 @@ export default function Partners() {
           </div>
         </div>
         <div className="partners_ul">
-          <div className="partners_ul_content" style={{overflow: "hidden"}}>
-            <ul style={{
+          <div className="partners_ul_content" style={{ overflow: "hidden" }}>
+            <div style={{
               display: "flex",
-              transform: `translateX(-${scrollPosition}%)`,
-              transition: "transform 0.5s linear",
-              width: "200%"
+              transform: `translateX(${position}px)`,
+              transition: "transform 0.1s linear"
             }}>
-              {[...partners, ...partners].map((src, index) => (
-                <li key={index} style={{
-                  flex: "0 0 16.666%",
-                  minWidth: "16.666%"
+              {duplicatedPartners.map((src, index) => (
+                <div key={`${src}-${index}`} style={{
+                  minWidth: "300px",
+                  padding: "0 20px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center"
                 }}>
                   <img
                     src={src}
                     loading="lazy"
                     alt=""
                     className="investors_image"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      opacity: 0.8,
+                      transition: "opacity 0.3s"
+                    }}
                   />
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

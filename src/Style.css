@@ -1079,4 +1079,21 @@
 .partners .partners_content .partners_ul {
   position: relative;
   width: 100%;
+  padding: 100px 0;
+}
+
+.partners .partners_content .partners_ul .partners_ul_content {
+  margin: 0 auto;
+}
+
+.partners .partners_content .partners_ul .partners_ul_content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partners .partners_content .partners_ul .partners_ul_content ul li {
+  margin: 10px;
+  width: 16%;
+  height: 100%;
 }
