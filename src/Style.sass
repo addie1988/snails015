@@ -843,3 +843,159 @@ $boxshadow: 3px 3px 0px 0 rgba(0, 0, 0, 1)
                             a
                                 justify-content: center
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------    
+
+.as_seen_in
+    position: relative
+    background-color: #000
+
+    .as_seen_in_content
+        margin: 0 auto
+
+        .as_seen_in_content_title
+            position: relative
+
+            .as_seen_in_content_title_content
+                margin: 0 auto
+                text-align: center
+
+                h3
+                    font-size: 4rem
+                    font-weight: 800
+                    font-family: "Playfair Display", serif
+                    position: relative
+                    color: #fff
+
+                    span
+                        background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        color: transparent
+
+        .as_seen_in_content_area
+            position: relative
+            margin-top: 50px
+
+            .as_seen_in_content_area_content
+                margin: 0 auto
+
+                .as_seen_in_content_area_box
+                    display: flex
+                    position: relative
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------                                        
+
+.advertise
+    position: relative
+    padding: 100px 0
+    background-color: #000
+    overflow: hidden
+
+    .advertise_content
+        margin: 0 auto
+        max-width: $maxWidth
+        padding: 60px
+        display: flex
+        flex-direction: column
+        align-items: baseline
+        justify-content: center
+        background: $bggradientbackground
+        border-radius: 40px
+        position: relative
+        overflow: hidden
+
+        .advertise_content_title
+            position: relative
+            width: 100%
+
+            .advertise_content_title_content
+                margin: 0 auto
+                text-align: center
+                text-align: left
+
+                h3
+                    font-size: 4rem
+
+                h2
+                    font-size: 4rem
+
+                p
+                    font-size: 2rem
+                    margin-top: 20px
+                    line-height: 1.4
+
+        .advertise_content_button
+            position: relative
+            margin: 80px 0
+
+            .advertise_content_button_content
+                margin: 0 auto
+
+                a
+                    font-weight: 900
+                    padding: 24px 44px
+                    background-color: #51ffa8
+                    border: 1px solid #000
+                    border-radius: 20px
+                    box-shadow: 3px 3px 0px 0 rgb(0, 0, 0)
+                    color: #000
+                    text-decoration: none
+                    display: inline-block
+
+        .advertise_bg
+            position: absolute
+            top: 0px
+            right: -160px
+            width: 67%
+            height: 100%
+
+            img
+                width: 100%
+                height: auto
+                object-fit: cover
+                opacity: .4
+
+@media screen and (max-width: 1190px)
+    .advertise
+        .advertise_content
+            max-width: 74%
+            .advertise_bg
+                width: 100%
+                left: 0
+                top: 440px
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------                                                        
+
+.partners
+    position: relative
+    background-color: #000
+
+    .partners_content
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+        .partners_content_title
+            position: relative
+            width: 100%
+            text-align: center
+
+            .partners_content_title_content
+                margin: 0 auto
+
+                h2
+                    color: #fff
+                    font-size: 3rem
+
+                    span
+                        background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        color: transparent
+
+        .partners_ul
+            position: relative
+            width: 100%
