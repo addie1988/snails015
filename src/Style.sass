@@ -821,8 +821,13 @@ $boxshadow: 3px 3px 0px 0 rgba(0, 0, 0, 1)
                             display: flex
                             align-items: center
                             justify-content: space-evenly
+                            transition: all 0.3s ease
                             p
                                 margin-left: 10px
+
+                            &:hover
+                                box-shadow: 0px 0px 0px 0 rgb(255, 255, 255)
+                                border: 1px solid #fff
 
 @media screen and (max-width: 1200px)
     .message
