@@ -188,7 +188,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 30px;
+  padding: 40px 0;
 }
 
 .banner .banner_content .banner_content_title {
@@ -841,6 +841,7 @@
 .message .message_content .message_content_area .message_content_area_content ul li .li_box .score span {
   color: #ffb700;
   font-size: 1.8rem;
+  margin-left: 10px;
 }
 
 .message .message_content .message_content_area .message_content_area_content ul li .li_box p {
@@ -989,6 +990,7 @@
 
 .advertise .advertise_content .advertise_content_title .advertise_content_title_content h3 {
   font-size: 4rem;
+  color: #fff;
 }
 
 .advertise .advertise_content .advertise_content_title .advertise_content_title_content h2 {
