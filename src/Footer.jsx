@@ -13,54 +13,63 @@ export default function Footer() {
         </div>
         <div className="footer_menu">
           <div className="footer_menu_content">
-            <span>COMPANY</span>
-            <ul>
-              <li>
-                <a href="#">
-                  <p>About us</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>Blog</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>Career</p>
-                </a>
-              </li>
-            </ul>
-            <span>SOCIALY</span>
-            <ul>
-              <li>
-                <a href="#">
-                  <p>Twitter</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>Instagram</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>Tiktok</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>Linkedin</p>
-                </a>
-              </li>
-            </ul>
+            <div className="footer_menu_area-1">
+              <div className="footer_menu_area-1_content">
+                <span>COMPANY</span>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <p>About us</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Blog</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Career</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="footer_menu_area-2">
+              <div className="footer_menu_area-2_content">
+                <span>SOCIALY</span>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <p>Twitter</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Instagram</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Tiktok</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <p>Linkedin</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div className="footer_button">
-            <div className="footer_button_content">
-                <a href="#">Get Started</a>
-                <a href="#">Join our Discord</a>
-            </div>
+          <div className="footer_button_content">
+            <a href="#">Get Started</a>
+            <a href="#">Join our Discord</a>
+          </div>
         </div>
       </div>
       <div className="footer_p">
