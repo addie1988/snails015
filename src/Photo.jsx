@@ -1,28 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../public/photo_area_1.webp ";
-import "../public/photo_area_2.webp";
-import "../public/photo_area_3.webp";
-import "../public/photo_area_4.webp";
-import "../public/photo_area_5.webp";
-import "../public/photo_area_6.webp";
-import "../public/photo_area_7.webp";
-import "../public/photo_area_8.webp";
-import "../public/photo_area_9.webp";
-import "../public/photo_area_10.webp";
-import "../public/photo_area_11.webp";
-import "../public/photo_area_12.webp";
-import "../public/photo_min_img_1.webp";
-import "../public/photo_min_img_2.webp";
-import "../public/photo_min_img_3.webp";
-import "../public/photo_min_img_4.webp";
-import "../public/photo_min_img_5.webp";
-import "../public/photo_min_img_6.webp";
-import "../public/photo_min_img_7.webp";
-import "../public/photo_min_img_8.webp";
-import "../public/photo_min_img_9.webp";
-import "../public/photo_min_img_10.webp";
-import "../public/photo_min_img_11.webp";
-import "../public/photo_min_img_12.webp";
 
 export default function Photo() {
   const photoArea1Ref = useRef(null);
