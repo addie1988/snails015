@@ -30,7 +30,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a href="#">
-                      <p>Career</p>
+                    <p>Career</p>
                     </a>
                   </li>
                 </ul>
