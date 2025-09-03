@@ -4,9 +4,10 @@ import SocialVideos from './SocialVideos'
 import Carousel from './Carousel'
 import Photo from './Photo'
 import Message from './Message'
-import Partners from './Partners'
 import As_seen_in from './As_seen_in'
-import Footer from './Footer' 
+import Advertise from './Advertise'
+import Partners from './Partners'
+import Footer from './Footer'
 import './Style.css'
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
       <Carousel />
       <Photo />
       <Message />
-      <Partners />
       <As_seen_in />
+      <Advertise />
+      <Partners />
       <Footer />
     </div>
   )

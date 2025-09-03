@@ -972,6 +972,7 @@
 .advertise .advertise_content .advertise_content_title {
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 
 .advertise .advertise_content .advertise_content_title .advertise_content_title_content {
@@ -997,6 +998,7 @@
 .advertise .advertise_content .advertise_content_button {
   position: relative;
   margin: 80px 0;
+  z-index: 2;
 }
 
 .advertise .advertise_content .advertise_content_button .advertise_content_button_content {
@@ -1021,6 +1023,7 @@
   right: -160px;
   width: 67%;
   height: 100%;
+  z-index: 1;
 }
 
 .advertise .advertise_content .advertise_bg img {
