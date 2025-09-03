@@ -1,5 +1,6 @@
 import React from "react";
 import LogoSvg from "./LogoSvg";
+import Message_button_svg from "./Message_button_svg";
 
 export default function Footer() {
   return (
@@ -67,8 +68,13 @@ export default function Footer() {
         </div>
         <div className="footer_button">
           <div className="footer_button_content">
-            <a href="#">Get Started</a>
-            <a href="#">Join our Discord</a>
+            <div className="footer_button_content_a">
+            <a href="#"><p>Get Started</p></a>
+            <a href="#">
+              <Message_button_svg />
+              <p>Join our Discord</p>
+            </a>
+            </div>
           </div>
         </div>
       </div>

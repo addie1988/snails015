@@ -260,7 +260,7 @@ export default function As_seen_in() {
                               margin: "0 auto",
                               textAlign: "center", 
                               padding: "clamp(8px, 1.5vw, 10px)",
-                              border: "1px solid #000",
+                              border: ".4px solid #00000029",
                               borderRadius: "10px",
                               marginTop: "clamp(8px, 2vw, 10px)",
                               fontSize: "clamp(12px, 2vw, 14px)",

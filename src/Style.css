@@ -1111,7 +1111,8 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 60px 0;
 }
 
 .footer .footer_content .footer_logo {
@@ -1127,7 +1128,7 @@
 
 .footer .footer_content .footer_logo .footer_logo_content p {
   color: #fff;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .footer .footer_content .footer_menu {
@@ -1153,6 +1154,15 @@
   color: #7b7b7b;
 }
 
+.footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-1_content ul, .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-2_content ul {
+  line-height: 3;
+  margin-top: 10px;
+}
+
+.footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-1_content ul li, .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-2_content ul li {
+  transition: all 0.3s ease;
+}
+
 .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-1_content ul li a, .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-2_content ul li a {
   text-decoration: none;
 }
@@ -1161,11 +1171,133 @@
   color: #fff;
 }
 
-.footer .footer_content .footer_buttons {
+.footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-1_content ul li:hover, .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-2_content ul li:hover {
+  transform: translateX(10px);
+}
+
+.footer .footer_content .footer_button {
   position: relative;
   width: 30%;
 }
 
+.footer .footer_content .footer_button .footer_button_content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .footer_content .footer_button .footer_button_content .footer_button_content_a {
+  display: block;
+}
+
+.footer .footer_content .footer_button .footer_button_content .footer_button_content_a a {
+  width: 70%;
+  height: 20px;
+  font-weight: 900;
+  padding: 24px 50px;
+  background-color: #51ffa8;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0 white;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer .footer_content .footer_button .footer_button_content .footer_button_content_a a:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-color: #5969EA;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0px 0 white;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .footer_content .footer_button .footer_button_content .footer_button_content_a a:nth-child(2) p {
+  margin-left: 10px;
+}
+
+.footer .footer_content .footer_button .footer_button_content .footer_button_content_a a:hover {
+  box-shadow: 0px 0px 0px 0 white;
+  border: 1px solid #fff;
+}
+
 .footer .footer_p {
   position: relative;
+  padding: 80px 0;
+}
+
+.footer .footer_p .footer_p_content {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer .footer_p .footer_p_content p {
+  color: #7b7b7b;
+}
+
+.footer .footer_p .footer_p_content a {
+  color: #7b7b7b;
+  text-decoration: none;
+  font-weight: 900;
+  margin-left: 180px;
+}
+
+@media screen and (max-width: 1340px) {
+  .footer .footer_content {
+    justify-content: center;
+  }
+  .footer .footer_content .footer_logo {
+    width: 100%;
+  }
+  .footer .footer_content .footer_logo .footer_logo_content {
+    align-items: center;
+  }
+  .footer .footer_content .footer_menu {
+    width: 100%;
+    padding: 60px 0;
+  }
+  .footer .footer_content .footer_menu .footer_menu_content {
+    justify-content: center;
+  }
+  .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-1 {
+    margin: 0 20px;
+    text-align: center;
+  }
+  .footer .footer_content .footer_menu .footer_menu_content .footer_menu_area-2 {
+    margin: 0 20px;
+    text-align: center;
+  }
+  .footer .footer_content .footer_button {
+    width: 100%;
+  }
+  .footer .footer_content .footer_button .footer_button_content {
+    justify-content: center;
+  }
+  .footer .footer_p .footer_p_content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer .footer_p .footer_p_content p {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin-top: 16px;
+  }
+  .footer .footer_p .footer_p_content a {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    order: 1;
+  }
 }
