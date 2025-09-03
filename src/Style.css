@@ -839,8 +839,8 @@
 }
 
 .message .message_content .message_content_area .message_content_area_content ul li .li_box .score span {
+  font-size: 22px;
   color: #ffb700;
-  font-size: 1.8rem;
   margin-left: 10px;
 }
 
