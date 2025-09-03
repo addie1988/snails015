@@ -110,35 +110,35 @@ export default function Photo() {
   }, [windowWidth]);
 
   const photoItems1 = [
-    {maxImg:"./dist/photo_area_1.webp",minImg:"./public/photo_min_img_7.webp",name:"@Phil Walton"},
-    {maxImg:"./dist/photo_area_2.webp",minImg:"./public/photo_min_img_8.webp",name:"@Linus ●ᴗ● Ekenstam"}, 
-    {maxImg:"./dist/photo_area_3.webp",minImg:"./public/photo_min_img_9.webp",name:"@Jerrod Lew"},
-    {maxImg:"./dist/photo_area_4.webp",minImg:"./public/photo_min_img_10.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_9.webp",minImg:"./public/photo_min_img_11.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_6.webp",minImg:"./public/photo_min_img_12.webp",name:"@Jenny"}
+    {maxImg:"./dist/photo_area_1.webp",minImg:"./dist/photo_min_img_7.webp",name:"@Phil Walton"},
+    {maxImg:"./dist/photo_area_2.webp",minImg:"./dist/photo_min_img_8.webp",name:"@Linus ●ᴗ● Ekenstam"}, 
+    {maxImg:"./dist/photo_area_3.webp",minImg:"./dist/photo_min_img_9.webp",name:"@Jerrod Lew"},
+    {maxImg:"./dist/photo_area_4.webp",minImg:"./dist/photo_min_img_10.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_9.webp",minImg:"./dist/photo_min_img_11.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_6.webp",minImg:"./dist/photo_min_img_12.webp",name:"@Jenny"}
   ].concat(Array(10).fill([
-    {maxImg:"./dist/photo_area_1.webp",minImg:"./public/photo_min_img_7.webp",name:"@Phil Walton"},
-    {maxImg:"./dist/photo_area_2.webp",minImg:"./public/photo_min_img_8.webp",name:"@Linus ●ᴗ● Ekenstam"},
-    {maxImg:"./dist/photo_area_3.webp",minImg:"./public/photo_min_img_9.webp",name:"@Jerrod Lew"}, 
-    {maxImg:"./dist/photo_area_4.webp",minImg:"./public/photo_min_img_10.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_9.webp",minImg:"./public/photo_min_img_11.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_6.webp",minImg:"./public/photo_min_img_12.webp",name:"@Jenny"}
+    {maxImg:"./dist/photo_area_1.webp",minImg:"./dist/photo_min_img_7.webp",name:"@Phil Walton"},
+    {maxImg:"./dist/photo_area_2.webp",minImg:"./dist/photo_min_img_8.webp",name:"@Linus ●ᴗ● Ekenstam"},
+    {maxImg:"./dist/photo_area_3.webp",minImg:"./dist/photo_min_img_9.webp",name:"@Jerrod Lew"}, 
+    {maxImg:"./dist/photo_area_4.webp",minImg:"./dist/photo_min_img_10.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_9.webp",minImg:"./dist/photo_min_img_11.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_6.webp",minImg:"./dist/photo_min_img_12.webp",name:"@Jenny"}
   ]).flat());
 
   const photoItems2 = [
-    {maxImg:"./dist/photo_area_7.webp",minImg:"./public/photo_min_img_1.webp",name:"@Phil Walton"},
-    {maxImg:"./dist/photo_area_8.webp",minImg:"./public/photo_min_img_2.webp",name:"@Linus ●ᴗ● Ekenstam"},
-    {maxImg:"./dist/photo_area_9.webp",minImg:"./public/photo_min_img_3.webp",name:"@Jerrod Lew"},
-    {maxImg:"./dist/photo_area_10.webp",minImg:"./public/photo_min_img_4.webp",name:"@Jenny"}, 
-    {maxImg:"./dist/photo_area_11.webp",minImg:"./public/photo_min_img_5.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_12.webp",minImg:"./public/photo_min_img_6.webp",name:"@Jenny"}
+    {maxImg:"./dist/photo_area_7.webp",minImg:"./dist/photo_min_img_1.webp",name:"@Phil Walton"},
+    {maxImg:"./dist/photo_area_8.webp",minImg:"./dist/photo_min_img_2.webp",name:"@Linus ●ᴗ● Ekenstam"},
+    {maxImg:"./dist/photo_area_9.webp",minImg:"./dist/photo_min_img_3.webp",name:"@Jerrod Lew"},
+    {maxImg:"./dist/photo_area_10.webp",minImg:"./dist/photo_min_img_4.webp",name:"@Jenny"}, 
+    {maxImg:"./dist/photo_area_11.webp",minImg:"./dist/photo_min_img_5.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_12.webp",minImg:"./dist/photo_min_img_6.webp",name:"@Jenny"}
   ].concat(Array(10).fill([
-    {maxImg:"./dist/photo_area_7.webp",minImg:"./public/photo_min_img_1.webp",name:"@Phil Walton"},
-    {maxImg:"./dist/photo_area_8.webp",minImg:"./public/photo_min_img_2.webp",name:"@Linus ●ᴗ● Ekenstam"},
-    {maxImg:"./dist/photo_area_9.webp",minImg:"./public/photo_min_img_3.webp",name:"@Jerrod Lew"},
-    {maxImg:"./dist/photo_area_10.webp",minImg:"./public/photo_min_img_4.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_11.webp",minImg:"./public/photo_min_img_5.webp",name:"@Jenny"},
-    {maxImg:"./dist/photo_area_12.webp",minImg:"./public/photo_min_img_6.webp",name:"@Jenny"}
+    {maxImg:"./dist/photo_area_7.webp",minImg:"./dist/photo_min_img_1.webp",name:"@Phil Walton"},
+    {maxImg:"./dist/photo_area_8.webp",minImg:"./dist/photo_min_img_2.webp",name:"@Linus ●ᴗ● Ekenstam"},
+    {maxImg:"./dist/photo_area_9.webp",minImg:"./dist/photo_min_img_3.webp",name:"@Jerrod Lew"},
+    {maxImg:"./dist/photo_area_10.webp",minImg:"./dist/photo_min_img_4.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_11.webp",minImg:"./dist/photo_min_img_5.webp",name:"@Jenny"},
+    {maxImg:"./dist/photo_area_12.webp",minImg:"./dist/photo_min_img_6.webp",name:"@Jenny"}
   ]).flat());
 
   return (
