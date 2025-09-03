@@ -63,6 +63,12 @@ export default function Footer() {
             </div>
         </div>
       </div>
+      <div className="footer_p">
+        <div className="footer_p_content">
+          <p>Copyright ©2012~2025 Snails . All rights reserved.</p>
+          <a href="">Terms & Privacy Policy</a>
+        </div>
+      </div>
     </div>
   );
 }

@@ -57,9 +57,9 @@ export default function As_seen_in() {
     const scroll = () => {
       if (isHovered || isDragging) return;
 
-      container.scrollLeft += 1;
-      if (container.scrollLeft >= container.scrollWidth / 3) {
-        container.scrollLeft = 0;
+      container.scrollLeft += 1; // 改為增加scrollLeft來實現向右滾動
+      if (container.scrollLeft >= (container.scrollWidth * 2) / 3) {
+        container.scrollLeft = container.scrollWidth / 3;
       }
       animationRef.current = requestAnimationFrame(scroll);
     };
@@ -252,7 +252,7 @@ export default function As_seen_in() {
                             }}>{item.content}</p>
                           )}
                         </div>
-                        <a href="https://shader.app" style={{textDecoration: "none", color: "#000"}} target="_blank" rel="noopener noreferrer">
+                        <a href="https://google.com" style={{textDecoration: "none", color: "#000"}} target="_blank" rel="noopener noreferrer">
                           <div
                             className="as_seen_in_li_button"
                             style={{
@@ -273,7 +273,7 @@ export default function As_seen_in() {
                             }}
                           >
                             閱讀更多
-                            <span style={{ fontSize: "1rem", marginLeft: "5px" }}>→</span>
+                            <span style={{ fontSize: "1rem", marginLeft: "5px" }}>⭠</span>
                           </div>
                         </a>
                         <div
@@ -311,7 +311,7 @@ export default function As_seen_in() {
           }}
         >
           {Array(5)
-            .fill("→")
+            .fill("⭠")
             .map((arrow, index) => (
               <span
                 key={index}

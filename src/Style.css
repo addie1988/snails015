@@ -1100,3 +1100,28 @@
   width: 16%;
   height: 100%;
 }
+
+.footer {
+  position: relative;
+  background-color: #000;
+}
+
+.footer .footer_content {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .footer_content .footer_logo {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.footer .footer_content .footer_logo .footer_logo_content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
